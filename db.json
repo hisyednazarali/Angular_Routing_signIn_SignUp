@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "Nazar",
+      "mobile": "4125896325",
+      "email": "syednazarali.in@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fullName": "Syed Mohd",
+      "mobile": "7417802074",
+      "email": "syednazarali2@gmail.com",
+      "password": "123456789",
+      "id": 2
+    },
+    {
+      "fullName": "Nazar",
+      "mobile": "7417802074",
+      "email": "nazar@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "fullName": "Mohd",
+      "mobile": "7418529630",
+      "email": "mohd@gmail.com",
+      "password": "12345",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

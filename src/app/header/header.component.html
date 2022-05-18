@@ -1,0 +1,44 @@
+<nav>
+    <div class="logo">
+            Qaisar
+    </div>
+    <label for="btn" class="icon">
+        <i class="fas fa-bars"></i>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul class="main_menu_wrapper">
+        <li><a routerLink="home">Home</a></li>
+        <li>
+            <label for="btn-1" class="show">about us</label>
+            <a routerLink="AboutUs">about us</a>
+            <input type="checkbox" id="btn-1">
+            <ul class="dropdown_menu">
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 1</a></li>
+            </ul>
+        </li>
+        <li><a routerLink="portfolio">Portfolio</a></li>
+        <li><a routerLink ="blog">Blog</a></li>
+        <li>
+            <label for="btn-2" class="show">services</label>
+            <a routerLink="services">services</a>
+            <input type="checkbox" id="btn-2">
+            <ul class="dropdown_menu">
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 1</a></li>
+                <li>
+                    <a href="#">more</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a routerLink="/dashboard">
+                <button class="btn btn-success">Sign In</button>
+            </a>
+        </li>
+      
+    </ul>
+</nav>

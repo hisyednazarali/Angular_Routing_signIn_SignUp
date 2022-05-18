@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: #f2f2f2;
+  color: #231f20;
+}
+nav {
+  background-color: #fff;
+  box-shadow: 0 10px 30px #8a9ba526;
+  /* display: flex;
+  justify-content: space-between; */
+}
+nav .logo {
+  float: left;
+  /* color: #fff; */
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav ul {
+  /* display: flex;
+  justify-content: space-between; */
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  /* float:left; */
+}
+nav ul li a {
+  text-decoration: none;
+  line-height: 70px;
+  color: #231f20;
+  padding: 8px 12px;
+  text-transform: capitalize;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+  border-top: 2px solid #fbfbfb;
+  box-shadow: 0 5px 10px #8a9ba526;
+}
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(196, 195, 195, 0.3);
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav .show,
+nav input,
+nav .icon {
+  display: none;
+  text-transform: capitalize;
+}
+@media (max-width: 968px) {
+  nav ul {
+    margin-right: 0;
+    float: left;
+  }
+  nav ul ul {
+    top: 70px;
+    position: static;
+    border: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul ul {
+    top: 70px;
+    position: static;
+  }
+  .show {
+    display: block;
+    /* color: #fff; */
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  nav .icon {
+    display: block;
+    color: #231f20;
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+}

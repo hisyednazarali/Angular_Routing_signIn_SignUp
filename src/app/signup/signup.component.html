@@ -1,0 +1,38 @@
+
+<div class ="container">
+    <div class="row justify-content-center" >
+      <div class="col-md-6">
+        <div class = "card p-5 mt-2">
+          <div class="text-center">
+            <h1>Sign Up</h1>
+            <h6>Please Enter Email and Password</h6>
+  
+            <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                <div class="mb-2 mt-2">
+                    <label for="email" class="form-label">Full Name:</label>
+                    <input formControlName ="fullName" type="email" class="form-control" id="email" placeholder="Enter Your Name" name="email">
+                  </div>
+                  <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Mobile:</label>
+                    <input formControlName ="mobile" type="email" class="form-control" id="email" placeholder="Enter Mobile" name="email">
+                  </div>
+             
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input formControlName ="email" type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input formControlName ="password" type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <a routerLink ="/dashboard">Already registered ? Click to SignIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
